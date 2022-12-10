@@ -134,3 +134,22 @@ function arrayMin(arr) {
  }
  return max;
  }
+
+//  11
+
+function Birthday_Game(arr,D ,M) {
+    
+  let count=0;
+  let sum=0;
+  for(let i=0;i<arr.length-M+1;i++){
+    sum=0;
+    for(let j=i;j<M+i;j++){
+      sum=sum+arr[j]
+    }
+    
+    if(sum==D){
+      ++count;
+    }
+  }
+  return count;
+}
